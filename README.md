@@ -22,8 +22,9 @@
 
 <img width="513" alt="Screen Shot 2021-06-27 at 9 06 13 PM" src="https://user-images.githubusercontent.com/80495710/123565636-9844be00-d78b-11eb-94da-cfd00d3fc025.png">
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+- The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
+- Lot 1 has a variance of 0.97... psi, and lot 2 has a variance of 7.46... psi so each of those are within specifications. Lot 3, however, has a variance of 170.286... psi. Now, the standard deviation associated with lot 3 is 13.049... psi, so the probability of a coil being more than 100 psi different is <0.00001 (a z-score of 13). So it depends on what is meant by variance. If by variance they mean sample variance, then lot 3 is outside specifications. However, if they mean standard deviation, then lot 3 is still highly unlikely to be that far outside of regulation. 
 
 ## T-Tests on Suspension Coils
 
