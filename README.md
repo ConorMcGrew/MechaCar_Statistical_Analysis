@@ -36,13 +36,20 @@
 
 <img width="402" alt="Screen Shot 2021-06-27 at 9 49 59 PM" src="https://user-images.githubusercontent.com/80495710/123568443-5b2ffa00-d792-11eb-86d0-c0d68584e0e7.png">
 
-Briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+Lot 1 had a p-value of 1 (so the average psi is exactly the population average). 
+Lot 2 had a p-value of 0.6072 (so the difference in the sample average is likely only due to random variation).
+Lot 3 had a p-value of 0.04168 (so the difference in this sample average(1496.14 psi) is not due to random chance).
 
 ## Study Design: MechaCar vs Competition.
 
 Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+In order to determine how MechaCar Performs versus the competition, consider the following questions:
+
+- What metric or metrics are you going to test?
+- The three primary factors when looking to purchase a car (according to consumers) are: Quality, Cost of Ownership, Reliability. So the main metrics would likely be maintenance costs / fuel efficiency, lifetime estimated mileage, and horsepower-to-weight ratio / torque. 
+- What is the null hypothesis or alternative hypothesis?
+- The null would of course be that each / all of those metrics have no affect on the probability of purchase from either MechaCar or Competition. 
+- What statistical test would you use to test the hypothesis? And why?
+- I would probably suggest running both t-tests for independent factors and an ANOVA to see if some combination of all those factors leads to a more likely purchase. The other reason to run an ANOVA, is that we are not only trying to determine if those factors affect sales from MechaCar or sales from a competitor individually, but whether that factor makes a person more likely to purchase from one or the other (Not only trying to decide which factor influences the sales at each retailer, but also if that factor makes a diffence as to which retailer they buy from).
+- What data is needed to run the statistical test?
+- List of common maintenances & mechanics labor guide value for those maintenances, mpg, mileage expected over typical car ownership period, horsepower, vehicle weight, acceleration (0 to 60 time). 
