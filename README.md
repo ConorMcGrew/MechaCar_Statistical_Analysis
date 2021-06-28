@@ -7,9 +7,14 @@
 
 <img width="823" alt="Screen Shot 2021-06-27 at 7 07 38 PM" src="https://user-images.githubusercontent.com/80495710/123562184-09c84080-d77b-11eb-9259-ae81260cef3b.png">
 
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-Is the slope of the linear model considered to be zero? Why or why not?
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+- Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+- The vehicle length and ground clearance each impacted the mpg to an extent that is not likely random. Vehicle length had an associated p-value of 2.6 X 10^(-12), and ground clearance had an associated p-value of 5.21 X 10^(-8) (so the probably that these factors affected mpg to this extent is random is less than one in ten million).
+
+- Is the slope of the linear model considered to be zero? Why or why not?
+- No, the linear model gives an overall p-value (F-Statistic) of 5.35 X 10^(-11). So, the slope of the linear regression is not negligible. 
+
+- Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+- Not exactly. If we look at the Std. Error of each of the coefficients, every one of them is greater than 10% of the coefficient value. So while the mpg is influenced by each of these factors, this linear model is not the best at predicting it. (If you took any one sample MPG and compared it to the MPG calculated from this linear regression, it may seem very close)
 
 ## Summary Statistics on Suspension Coils
 
